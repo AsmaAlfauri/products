@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20ff30ce-eb41-41e7-a9d5-53404c791ae7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/products/edit-product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/products/delete-category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/products/delete-product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/products/update-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/products/update-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/products/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/products/edit-product.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +52,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="product.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MVC-OOP_PHP/Model/product.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.product.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -74,7 +80,7 @@
       <workItem from="1571148573227" duration="2418000" />
       <workItem from="1571221468363" duration="1175000" />
       <workItem from="1571228364821" duration="6233000" />
-      <workItem from="1571234789660" duration="2242000" />
+      <workItem from="1571234789660" duration="3802000" />
     </task>
     <servers />
   </component>

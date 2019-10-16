@@ -2,10 +2,10 @@
 
 class product
 {
-private $name;
-private $description;
-private $price;
-private $category_id;
+    private $name;
+    private $description;
+    private $price;
+    private $category_id;
 
     /**
      * product constructor.
@@ -23,19 +23,26 @@ private $category_id;
     }
 
 
-    function AddProduct($connection){
-       $sql="INSERT INTO products (name,description,price,category_id)
+    function AddProduct($connection)
+    {
+        $sql = "INSERT INTO products (name,description,price,category_id)
  VALUES('$this->name','$this->description',$this->price,$this->category_id)";
-    $connection->exec($sql);
+        $connection->exec($sql);
     }
 
-    function deleteProduct($connection,$id){
+    function deleteProduct($connection, $id)
+    {
         $sql = "DELETE FROM products WHERE id=$id";
         return $connection->exec($sql);
     }
 
-function editProduct (){
-
-}
+    function getProduct($connection, $id)
+    {
+        $sql_product = "SELECT * FROM products WHERE id=$id";
+        $query = $connection->prepare($sql_product);
+        $query->execute();
+        $product= $query->fetchAll(PDO::FETCH_ASSOC);
+        return $product[0];
+    }
 }
 
