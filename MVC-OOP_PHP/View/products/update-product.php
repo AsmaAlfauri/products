@@ -6,9 +6,15 @@ include "../../database/database.php";
 //connect data
 $conn=new database();
 $connection=$conn->conn();
+
+if(isset($_POST['delete'])){
+    $id=$_POST['id'];
+    $product = new product(" "," "," "," ");
+    $product->deleteProduct($connection, $id);
+}
 ?>
 
-<form style="width: 50%;margin: 0 auto" method="post">
+<div style="width: 50%;margin: 0 auto">
     <table class="table" >
         <thead>
         <tr>
@@ -29,14 +35,20 @@ $connection=$conn->conn();
                 <td><?php echo htmlspecialchars($row['name'])?></td>
                 <td><?php echo htmlspecialchars($row['description'])?></td>
                 <td><?php echo htmlspecialchars($row['price'])?></td>
-                <td><button type="submit" name="edit" class="btn btn-primary">Edit</button></td>
-                <td><button type="submit" name="update" class="btn btn-primary">Delete</button></td>
+                <form action="./edit-product.php" method="post">
+                    <input type="hidden" name="id" value="<?php echo $row['id']?>">
+                    <td><button type="submit" name="edit" class="btn btn-primary">Edit</button></td>
+                </form>
+                    <form method="post">
+                    <input type="hidden" name="id" value="<?php echo $row['id'] ?>">
+                <td><button type="submit" name="delete" class="btn btn-primary" >Delete</button></td>
+                </form>
             </tr>
             </tbody>
 
         <?php } ?>
     </table>
-</form>
+</div>
 
 <?php
 

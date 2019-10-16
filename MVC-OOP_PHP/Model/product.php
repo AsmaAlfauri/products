@@ -27,7 +27,15 @@ private $category_id;
        $sql="INSERT INTO products (name,description,price,category_id)
  VALUES('$this->name','$this->description',$this->price,$this->category_id)";
     $connection->exec($sql);
-//    echo "New record created successfully";
     }
+
+    function deleteProduct($connection,$id){
+        $sql = "DELETE FROM products WHERE id=$id";
+        return $connection->exec($sql);
+    }
+
+function editProduct (){
+
+}
 }
 
