@@ -16,7 +16,6 @@ if (isset($_POST['edit'])) {
     $id = $_POST['id'];
     $product = new product(" ", " ", " ", " ");
     $get_product = $product->getProduct($connection, $id);
-
     $id = $get_product['id'];
     $name = $get_product['name'];
     $description = $get_product['description'];
