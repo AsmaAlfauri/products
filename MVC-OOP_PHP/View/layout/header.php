@@ -42,15 +42,7 @@
                     <a class="dropdown-item" href="../products/update-category.php">update category</a>
                 </div>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    DELETE
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="../products/delete-product.php">delete product</a>
-                    <a class="dropdown-item" href="../products/delete-category.php">delete category</a>
-                </div>
-            </li>
+            
 
         </ul>
         <form class="form-inline my-2 my-lg-0">
