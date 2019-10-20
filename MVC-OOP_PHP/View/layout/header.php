@@ -42,7 +42,7 @@
                     <a class="dropdown-item" href="../products/update-category.php">update category</a>
                 </div>
             </li>
-            
+
 
         </ul>
         <form class="form-inline my-2 my-lg-0">
